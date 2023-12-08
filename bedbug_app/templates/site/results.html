@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}{{ post['title'] }}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+{% if img_info %}
+<img src="{{img_info['url']}}">
+{% endif %}
+<h3>Description</h3>
+<p>{{post['body']}}</pp>
+    <hr>
+<article class="post">
+    <div>
+        <b>Classification: {{img_info["classification"]}}</b>
+        <br>
+        <b>Confidence:{{img_info["probability"]}} </b>
+    </div>
+</article>
+
+{% endblock %}

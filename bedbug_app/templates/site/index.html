@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}Posts{% endblock %}</h1>
+{% if g.user %}
+<a class="action" href="{{ url_for('site.create') }}">New</a>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+{% for index in range(img_list | length) %}
+<a class="postlink" href="{{ url_for('site.results', id=posts[index]['id']) }}">
+  <article class="post">
+    <header>
+      <div>
+        <h1>{{ posts[index]['title'] }}</h1>
+        <div class="about">Date: {{ posts[index]['created']}}</div>
+      </div>
+      {% if g.user['id'] == posts[index]['author_id'] %}
+      {% endif %}
+    </header>
+    <img src="https://storage.googleapis.com/cs50bedbugs/thumbnails/{{img_list[index]['image_name']}}">
+    <p class="body">{{ posts[index]['body'] }} </p>
+  </article>
+</a>
+{% if not loop.last %}
+<hr>
+{% endif %}
+{% endfor %}
+{% endblock %}
