@@ -1,0 +1,17 @@
+[project]
+name = "bedbug-app"
+version = "1.0.0"
+description = "Application for identifying bedbugs in photos."
+dependencies = [
+    "flask",
+    "requests",
+    "google-api-core,
+    "google-auth",
+    "google-cloud-aiplatform",
+    "google-cloud-storage"
+    "pillow"
+]
+
+[build-system]
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"
