@@ -30,6 +30,8 @@ The model returns its classfication of "Bed Bug" or "Not a Bed Bug" to the user,
 2. Once the requirements are installed, the user should initialize a database. To initialize a database the user can run `flask --app bedbug_app init-db`.
 3. Lastly, but very importantly, this project is using Google Cloud Storage to store photos, so the user must authenticate. A service account key is provided inside of the zip.
 
+in Linux run `export GOOGLE_APPLICATION_CREDENTIALS="deep-learning-class-399113-55bdb740e012.json"`.
+
 Once the steps above are completed, the user can run the app by running `flask --app bedbug_app run`.
 
 If you simply want to use the application, try [bbugapp.com](https://bbugapp.com/) :) 
