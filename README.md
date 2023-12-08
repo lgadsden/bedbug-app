@@ -32,6 +32,6 @@ The model returns its classfication of "Bed Bug" or "Not a Bed Bug" to the user,
 
 Once the steps above are completed, the user can run the app by running `flask --app bedbug_app run`.
 
-If you simply want to use the application, try bbugapp.com :) 
+If you simply want to use the application, try [bbugapp.com](https://bbugapp.com/) :) 
 
 
