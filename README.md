@@ -31,7 +31,7 @@ The model returns its classfication of "Bed Bug" or "Not a Bed Bug" to the user,
 3. Lastly, but very importantly, this project is using Google Cloud Storage to store photos, so the user must authenticate. A service account key is provided inside of the zip. <br>
 
 Linux run `export GOOGLE_APPLICATION_CREDENTIALS="deep-learning-class-399113-55bdb740e012.json"`. <br>
-Windows: $env:GOOGLE_APPLICATION_CREDENTIALS="deep-learning-class-399113-55bdb740e012.json"
+Windows: `$env:GOOGLE_APPLICATION_CREDENTIALS="deep-learning-class-399113-55bdb740e012.json"`
 
 Once the steps above are completed, the user can run the app by running `flask --app bedbug_app run`.
 
