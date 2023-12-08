@@ -7,18 +7,20 @@ that will find patterns from many images (like a human would) and will classify 
 
 ## How the App Works
 ### Registration
-All first time users must register on the site. 
+All first time users must register on the site. User must enter a username that is between 5-15 characters and they must also enter a password that is between 8-20 characters. 
+The user has to repeat a matching password as well. After the user enters their password, they are redirected to the login page. 
 ![registration page](images/register.png)
 
 
 ### Login
-After registering, users must log in. 
+In the login page, the user simply logs in, using the username and password that they registered with. After logging in, the user is redirected to the index page.
 
 ### Creating a Post
-Users 
+This time when the user is on the index page, they are logged and and can make posts. To make a post, the user should click on "New". Once the user clicks on "New" a form where the user enters a title and a description is present. The user must also submit their image here. When the user clicks submit, the image is sent to the a machine learning model that is hosted on Google Cloud. 
 ![Post](images/post.png)
 
 ### Viewing Results 
+The model returns its classfication of "Bed Bug" or "Not a Bed Bug" to the user, along with the probablity. A high probability means that the model is failrly certain, while a probability close to .50 means that the model is not sure. 
 ![Post](images/classification.png)
 
 
