@@ -47,4 +47,6 @@ the main functions.
 
 In helper.py, we have functions that upload images (really anything) to the Google Cloud Bucket, create image thumbnails, and for sending images to the model for prediction. 
 
+#### Jinja2
+The html files are created using jinja templates. Outside of parsing entries from python (e.g. image and post information) the templates are simple.
 
