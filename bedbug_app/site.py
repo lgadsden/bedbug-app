@@ -17,6 +17,7 @@ bp = Blueprint('site', __name__)
 
 
 @bp.route('/')
+@login_required
 def index():
     db = get_db()
     posts = db.execute(
@@ -108,7 +109,7 @@ def create():
     return render_template('site/create.html')
 
 
-def get_post(id, check_author=True):
+def get_post(id, check_author=False):
     post = get_db().execute(
         'SELECT p.id, title, body, created, author_id, username'
         ' FROM post p JOIN user u ON p.author_id = u.id'
