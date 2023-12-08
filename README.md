@@ -23,7 +23,8 @@ This time when the user is on the index page, they are logged and and can make p
 The model returns its classfication of "Bed Bug" or "Not a Bed Bug" to the user, along with the probablity. A high probability means that the model is failrly certain, while a probability close to .50 means that the model is not sure. 
 ![Post](images/classification.png)
 
-
+## Youtube 
+https://youtu.be/ywdMf8StZ9g
 
 ## Setting up the application locally 
 1. To set up the application locally, users should first create a new virtual environemnt and install all of the packages listed in requirements.txt. 
@@ -34,7 +35,5 @@ Linux run `export GOOGLE_APPLICATION_CREDENTIALS="deep-learning-class-399113-55b
 Windows: `$env:GOOGLE_APPLICATION_CREDENTIALS="deep-learning-class-399113-55bdb740e012.json"`
 
 Once the steps above are completed, the user can run the app by running `flask --app bedbug_app run`.
-
-If you simply want to use the application, try [bbugapp.com](https://bbugapp.com/) :) 
 
 
