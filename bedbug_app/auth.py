@@ -17,10 +17,10 @@ bp = Blueprint('auth', __name__, url_prefix='/auth')
 
 @bp.route('/register', methods=('GET', 'POST'))
 def register():
-"""Sets up the user to be registered for the application. 
-Returns HTML for the registration page on a GET request or HTML 
-for the login page if the user registers correctly.
-"""
+    """Sets up the user to be registered for the application. 
+    Returns HTML for the registration page on a GET request or HTML 
+    for the login page if the user registers correctly.
+    """
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
@@ -62,9 +62,9 @@ for the login page if the user registers correctly.
 
 @bp.route('/login', methods=('GET', 'POST'))
 def login():
-"""Allows user to login. Returns login page on a GET request or index 
-when the user logs in correctly. 
-"""
+    """Allows user to login. Returns login page on a GET request or index 
+    when the user logs in correctly. 
+    """
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
@@ -103,7 +103,7 @@ def load_logged_in_user():
 
 @bp.route('/logout')
 def logout():
-"Logs out the user. Returns the index page."
+    "Logs out the user. Returns the index page."
     session.clear()
     return redirect(url_for('index'))
 
@@ -111,7 +111,7 @@ def logout():
 def login_required(view):
     @functools.wraps(view)
     def wrapped_view(**kwargs):
-    """If user is not logged in, will request that user logs in. """
+        """If user is not logged in, will request that user logs in. """
         if g.user is None:
             return redirect(url_for('auth.login'))
 

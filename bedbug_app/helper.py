@@ -39,7 +39,7 @@ def predict_image_classification_sample(
     location: str = "us-central1",
     api_endpoint: str = "us-central1-aiplatform.googleapis.com",
 ):
-""""Returns a prediction if contains a bedbug."""
+    """"Returns a prediction if contains a bedbug."""
     # The AI Platform services require regional API endpoints.
     client_options = {"api_endpoint": api_endpoint}
     # Initialize client that will be used to create and send requests.
