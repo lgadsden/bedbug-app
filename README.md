@@ -8,6 +8,7 @@ that will find patterns from many images (like a human would) and will classify 
 ## How the App Works
 ### Registration
 All first time users must register on the site. 
+![registration page](images/register.png)
 
 
 ### Login
@@ -15,12 +16,10 @@ After registering, users must log in.
 
 ### Creating a Post
 Users 
-
-
-### Uploading the image
-
+![Post](images/post.png)
 
 ### Viewing Results 
+![Post](images/classification.png)
 
 
 
